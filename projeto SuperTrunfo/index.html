@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css"/>;
+    <script src="script.js"></script>;
+
+    <title>
+        POKEMON
+    </title>
+</head>
+
+<body>
+    <div class="container">
+        <img src="https://i.pinimg.com/originals/ef/e4/f0/efe4f058ac4985936baf4b3d5027587d.png" class="page-logo"
+            alt="">
+        <h1 class="page-title">SUPER TRUNFO</h1>
+
+        <button onclick="sortearCarta()" id="btnSortear">Sortear carta</button>
+
+        <form id="form">
+            <h2>Escolha o seu atributo</h2>
+            <div class="wrapper">
+                <div id="placar"></div>
+                <div id="quantidade-cartas"></div>
+                <div id="cartas">
+                    <div id="carta-jogador" class="carta"></div>
+                    <div id="carta-maquina" class="carta"></div>
+                </div>
+                <button class="button-jogar" type="button" id="btnJogar" onclick="jogar()"
+                    disabled="false">Jogar</button>
+            </div>
+            <div id="resultado"></div>
+            <button type="button" id="btnProximarodada" onclick="proximaRodada()" disabled="true">Proxima
+                rodada</button>
+        </form>
+    </div>
+</body>
+
+</html>
